@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SN Pro', sans-serif;
+}
+
+h2 {
+    font-family: 'Limelight', sans-serif;
+}
+
+body {
+    background-color: #2C3947;
+    color: #2C3947;
+}
+
+main {
+    background-color: #E8EDF2;
+    box-shadow: 3px 3px 2px #C2A56D;
+    border-radius: 25px;
+    margin: 10px;
+    padding-bottom: 50px;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 5rem;
+    margin: 10px;
+}
+
+h2 {
+    border-radius: 5px;
+    background-color: #547A95;
+    color: white;
+
+    display: inline-block;
+    align-self: flex-start;
+
+    
+    min-width: 200px;
+    padding: 5px;
+    margin-bottom: 5px;
+    
+    text-shadow: 1px 1px 2px #2C3947;
+    box-shadow: 2px 2px #C2A56D;
+}
+
+section p {
+    display: inline-block;
+    align-self: flex-start;
+
+    background-color: white;
+    box-shadow: 1px 1px 4px #2C3947;
+
+    max-width: 600px;
+    
+    border-radius: 5px;
+    padding: 5px 10px;
+    flex: 1;
+}
+
+.title-container {
+    background-color: #547A95;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10rem;
+
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+
+    box-shadow: 2px 2px 2px #C2A56D;
+}
+
+.title-container h1 {
+    font-family: "Great Vibes", cursive;
+
+    width: 40%;
+    border-bottom: #C2A56D 4px solid;
+    border-bottom-style: dotted;
+    
+    text-align: center;
+}
+
+.go-to-topic {
+    margin-top: 20px;
+    display: inline-block;
+    align-self: center;
+}
+
+.go-to-topic ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.go-to-topic a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #2C3947;
+    
+    border: #2C3947 1px solid;
+    box-shadow: 2px 2px #2C3947;
+    border-radius: 5px;
+    
+    padding: 5px;
+
+    transition: transform 0.2s ease;
+}
+
+.go-to-topic a:hover {
+    background-color: #C2A56D;
+    color: white;
+    
+    transform: translateY(-1px);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.content .highlight {
+    font-family: "Great Vibes", cursive;
+    align-self: center;
+    text-align: center;
+    font-size: 50px;
+    
+    width: 50%;
+    border-bottom: #C2A56D 4px solid;
+    border-bottom-style: dotted;
+}
+
+.abilities ul {
+    list-style: none;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.abilities li {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+
+    text-shadow: 1px 1px 2px #2C3947;
+    box-shadow: 2px 2px #2C3947;
+    background-color: #C2A56D;
+    color: white;
+
+    transition: transform 0.2s ease;
+}
+.abilities li:hover {
+    transform: translateY(-2px);
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 320px;
+    min-height: 450px;
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+
+    background-color: #547A95;
+    box-shadow: 2px 2px 5px #C2A56D;
+}
+
+.projects h3 {
+    text-align: center;
+    width: 100%;
+    
+    color: white;
+    text-shadow: 1px 1px 2px #2C3947;
+    border-bottom: #C2A56D;
+    border-bottom-style: dotted;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+
+    border-radius: 30px;
+    border: #C2A56D 5px solid;
+    box-shadow: #2C3947 2px 2px 5px;
+}
+
+.project-card h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.theme {
+    color: #E8EDF2;
+    text-decoration: underline;
+}
+
+.project-buttons {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+
+    min-width: 132px;
+    padding: 10px;
+    width: 50%;
+
+    border-radius: 10px;
+    border: 2px solid white;
+    
+    background-color: white;
+    box-shadow: 2px 2px 2px #2C3947;
+    color: #2C3947;
+
+    transition: transform 0.1s ease;
+}
+
+.btn:hover {
+    background-color: #E8EDF2;
+    transform: translateY(-1px);
+}
+
+.project-card p {
+    flex: 1;
+    width: 100%;
+}
+
+#secondary-button {
+    color: white;
+    border: 2px solid white;
+    
+    background-color: transparent;
+}
+
+#secondary-button:hover {
+    background-color: #C2A56D;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.interests {
+    background-color: #bcb3a0;
+    align-self: center;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #2C3947;
+}
+
+#off-topic {
+    background-color: transparent;
+    box-shadow: none;
+    text-align: center;
+    align-self: center;
+    
+    color: #2C3947;
+}
+
+.contact {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+
+    background-color: #bcb3a0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #2C3947;
+}
+
+.contact .btn {
+    align-self: center;
+    width: 100%;
+    padding: 15px;
+}
+
+.footer-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-container h2 {
+    color: white;
+    text-shadow: 2px 2px 3px #547A95;
+    
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.footer-container .btn {
+    width: 20%;
+    box-shadow: 2px 2px 2px #547A95;
+}
+
+.footer-container p {
+    color: white;
+    font-size: smaller !important;
+    
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        display: block;
+    }
+}
+
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 70px !important;
+    }
+
+    h4 {
+        font-size: 25px !important;
+    }
+
+    p {
+        font-size: 25px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    .go-to-topic {
+        font-size: 25px !important;
+    }
+
+    .go-to-topic ul {
+        gap: 50px;
+    }
+
+    .highlight {
+        font-size: 80px !important;
+    }
+
+    .top-info {
+        display: flex;
+        justify-content: center;
+    }
+
+    .top-info h2 {
+        align-self: center;
+    }
+
+    .project-card p {
+        align-self: center;
+    }
+}
