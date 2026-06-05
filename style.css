@@ -102,6 +102,7 @@ section p {
 .go-to-topic ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
@@ -217,6 +218,7 @@ section p {
 
 .project-buttons {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 10px;
     gap: 10px;
@@ -226,9 +228,8 @@ section p {
     text-decoration: none;
     text-align: center;
 
-    min-width: 132px;
     padding: 10px;
-    width: 50%;
+    width: auto;
 
     border-radius: 10px;
     border: 2px solid white;
@@ -325,7 +326,7 @@ section p {
 }
 
 .footer-container .btn {
-    width: 20%;
+    width: auto;
     box-shadow: 2px 2px 2px #547A95;
 }
 
@@ -334,6 +335,12 @@ section p {
     font-size: smaller !important;
     
     align-self: center;
+}
+
+@media (max-width: 450px) {
+    .btn-text {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
